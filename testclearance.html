@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Application Form</h2>
+        <form action="#">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <p>Select the purpose(s) of your application:</p>
+            <input type="checkbox" id="employment" name="purpose" value="employment">
+            <label for="employment">Application for Employment</label><br>
+
+            <input type="checkbox" id="travel" name="purpose" value="travel">
+            <label for="travel">Overseas Travel Papers</label><br>
+
+            <input type="checkbox" id="residence" name="purpose" value="residence">
+            <label for="residence">Transfer of Residence</label><br>
+
+            <input type="checkbox" id="reference" name="purpose" value="reference">
+            <label for="reference">School Reference</label><br>
+
+            <input type="checkbox" id="senior-id" name="purpose" value="senior-id">
+            <label for="senior-id">Application for Senior Citizen ID</label><br>
+
+            <input type="checkbox" id="pwd-id" name="purpose" value="pwd-id">
+            <label for="pwd-id">Application for PWD ID</label><br>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+</body>
+</html>
